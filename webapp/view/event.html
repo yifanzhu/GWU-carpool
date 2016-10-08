@@ -1,0 +1,85 @@
+   <div class="page">
+    	<div class="container">
+			<div class="row">
+				<h3 class="col-md-12">{{event.title}}</h3>
+					<div class="col-md-12 event_information">
+						
+							<table style="width:100%">
+						  		<tr>										
+									<td>Start Address:</td>
+									<td>{{event.startAddress}}</td>	
+									<td>Date:</td>
+									<td>{{event.departureTime}}</td>									
+								</tr>
+								<tr>
+									<td>End Address:</td>
+									<td>{{event.endAddress}}</td>	
+									<td>Total People:</td>
+									<td>{{event.capacity}}</td>										
+								</tr>
+								<tr>
+									<td>Memo</td>
+									<td>{{event.description}}</td>	
+								</tr>	
+							</table>
+						
+					</div>
+					<div id="userlist" class="col-md-12">
+					<h4>User List</h4>
+						<div ng-repeat="pendinguser in event.pending" class="col-md-12 pending">
+							<!-- <div class="col-md-3 profile_image">
+							 <img alt="" src="img/UserF.png">
+							</div> -->
+							<div class="col-md-6 user_information">	
+								<table>						
+									<tr>										
+										<td>Name:</td>
+										<td>{{pendinguser.username}}</td>	
+										<td>Gender:</td>
+										<td>{{pendinguser.gender}}</td>										
+									</tr>
+									<tr>
+										<td>Phone:</td>
+										<td>{{pendinguser.phone}}</td>		
+										<td>Reputation:</td>
+										<td>{{pendinguser.reputation}}</td>			
+									</tr>											
+								</table>												
+							</div>
+							<div ng-if="event.role == 'driver' " class="col-md-3">
+								<button type="button" class="btn btn-success" ng-click="accept(pendinguser.email)">Accept</button>
+								<button type="button" class="btn btn-danger" ng-click="decline(pendinguser.email)">Decline</button>				
+							</div>
+							</br>					
+						</div>
+						</br></br>					
+						<div ng-repeat="passenger in event.passengers" class="col-md-12 passenger">
+							<!-- <div class="col-md-3 profile_image">
+							 <img alt="" src="img/UserF.png">
+							</div> -->
+							<div class="col-md-6 user_information">	
+								<table>						
+									<tr>										
+										<td>Name:</td>
+										<td>{{passenger.username}}</td>	
+										<td>Gender:</td>
+										<td>{{passenger.gender}}</td>										
+									</tr>
+									<tr>
+										<td>Phone:</td>
+										<td>{{passenger.phone}}</td>		
+										<td>Reputation:</td>
+										<td>{{passenger.reputation}}</td>			
+									</tr>
+								</table>				
+							</div>				
+						</div>
+					</div>
+					</br></br>						
+					<div ng-if="user.role == 'driver' " class="col-md-12" ng-show="show">
+						<button type="submit" class="btn btn-default" ng-click="show = false">Launched Now!</a></button>
+					</div>
+							
+			</div>
+		</div>
+    </div>

@@ -1,0 +1,23 @@
+.intro {
+	height: 100%;
+    padding: 20% 0 0 0;
+	position:relative;
+  	background-size: cover;
+  	
+ 	background-attachment: fixed;	
+}
+.intro .page-scroll {
+	text-align: center;
+}
+
+/* ===========================
+--- About
+============================ */
+
+.about {
+	height: 100%;
+	padding: 3em 0em 1em 0em;
+}
+.about .heading {
+  	margin: 1.5em auto 2.5em;
+}

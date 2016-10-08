@@ -1,0 +1,45 @@
+@CHARSET "utf-8";
+.page {
+	margin: 5em 0em;
+}
+.page .results .results-information {
+	background: #efefef;
+}
+.page .results .results-information .searchbar{
+	padding: 2em;
+}
+.page .results .results-information .sidebar {
+	padding: 1em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.page .results .event {
+	padding: 1em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.page .results .btn {
+	margin: 0.5em 0;
+	width: 100%;
+}
+.page .single_event_information {
+	padding: 1em 2em 2em 2em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.page .current_user {
+	background: #efefef;	
+}
+.page .user {
+	height: auto;
+	padding: 1em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	
+}
+.page .user .profile_image {
+	padding: 1em;
+}
+.page .user .user_status {
+	padding: 1em;
+}
+.page .user .btn {
+	margin: 1em 0;
+	width: 100%;
+}

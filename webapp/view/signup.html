@@ -1,0 +1,41 @@
+<div class="container" >
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+            <br/><br/>
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Create an account:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset><br/>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Name" name="name"  ng-model="user.name" type="name" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Email" name="email"  ng-model="user.email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password"  ng-model="user.password" type="password" value="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Phone Number" name="phone"  ng-model="user.phone" type="phone" value="">
+                                </div> 
+                                <table style="width:100%; color:grey">                              
+                                <tr>
+                                    <td>Gender:</td>
+                                    <td><input type="radio" name="userGender" value="male" ng-model="user.gender"/>  Male</td>
+                                    <td><input type="radio" name="userGender" value="female" ng-model="user.gender"/>  Female</td>
+                                 </tr>
+                                </table>                             
+                                <!-- Change this to a button or input when using this as a form -->
+                                <br/>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" ng-click="signup()">create an account</button>
+                                
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

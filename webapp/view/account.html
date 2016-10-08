@@ -1,0 +1,36 @@
+
+<div class="page">
+   		<div class="account">
+	    	<div class="container">
+				<div class="row">
+				
+				<h3 class="col-md-12">Event List</h3>	
+					<div ng-repeat="event in events">
+	
+							<div class="col-md-12 event_information">							
+								<table style="width:100%">					
+									<tr>
+										<td><a href="#/event/{{event.id}}">Title:</a></td>
+										<td>{{event.title}}</td>
+										<td>Start Address:</td>
+										<td>{{event.startAddress}}</td>	
+										<td>End Address:</td>
+										<td>{{event.endAddress}}</td>										
+									</tr>
+									<tr>
+										<td>Date:</td>
+										<td>{{event.departureTime}}</td>		
+										<td>Total People:</td>
+										<td>{{event.capacity}}</td>
+										<td>Memo</td>
+										<td>{{event.description}}</td>	
+									</tr>						  
+								</table>												
+							</div>									
+																																		
+					</div>
+					
+				</div><!-- row -->	
+			</div>
+		</div>
+	</div>
